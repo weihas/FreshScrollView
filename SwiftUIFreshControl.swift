@@ -1,11 +1,12 @@
-# FreshScrollView
-SwiftUI ScrollView can pull to fresh
+//
+//  SwiftUIFreshControl.swift
+//  FreshScrollView
+//
+//  Created by WeIHa'S on 2021/12/8.
+//
 
-#### One day, when I were writing a scrollview with a SwiftUI, I suddenly wanted to add a drop-down refresh to it, but soon found that it was too difficult...
+import SwiftUI
 
-### Here is a easy way.
-
-```swift
 public struct FreshScrollView<Content>: View where Content : View{
     private let content: () -> Content
     private let action: () -> Void
@@ -61,5 +62,3 @@ struct FreshScrollView_Previews: PreviewProvider {
     }
 }
 #endif
-
-```
